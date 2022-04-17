@@ -1,0 +1,18 @@
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #F8F9FA;
+}
+
+.shoes-category {
+    width: 45%;
+}
+
+li {
+    list-style: none;
+}
+
+ul li:first-child {
+    padding-bottom: 2px;
+    color: #000000;
+}
