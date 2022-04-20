@@ -3,8 +3,8 @@
         'Home' => [
             'title' => 'Home page',
         ],
-        'Products' => [
-            'title' => 'Products',
+        'Items' => [
+            'title' => 'Items',
         ],
         'Login' => [
             'title' => 'Login',
@@ -35,20 +35,23 @@
           rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
           crossorigin="anonymous">
     <!-- mainStyles -->
-    <link href="Styles/MainStyles.css" rel="stylesheet">
+    <link href="MainStyles.css" rel="stylesheet">
 </head>
 <body>
     <header>
-        <h1 class="visually-hidden">Cocodrile</h1>
+        <h1 class="visually-hidden">Cocodrile Shop</h1>
     </header>
     <nav>
+        <div>
+            <a href="main.php?v=Home" class="logo"> Cocodrile Shop</a>
+        </div>
         <div class="container row navbar navbar-expand navbar-dark bg-light">
-            <ul class="collapse navbar-collapse navbar-nav text-center ms-auto">
+            <ul class="justify-content-end collapse navbar-collapse navbar-nav ms-auto">
                 <li class="nav-item">
                     <a href="main.php?v=Home" class="nav-link text-secondary"> Home </a>
                 </li>
                 <li class="nav-item">
-                    <a href="main.php?v=Products" class="nav-link text-secondary"> Products </a>
+                    <a href="main.php?v=Items" class="nav-link text-secondary"> Items </a>
                 </li>
                 <li class="nav-item">
                     <a href="main.php?v=Login" class="nav-link text-secondary"> Login </a>
@@ -69,15 +72,15 @@
         ?>
     </main>
     <footer class="bg-light text-secondary mt-4">
-        <div class="container row m-auto justify-content-center">
-            <ul class="col-lg-4 my-5">
+        <div class="container row m-auto justify-content-center d-flex">
+            <ul class="col-lg-4 my-5 mx-auto">
                 <li> Datos: </li>
                 <li> Gonzalo Ramos Farinho </li>
                 <li> Comisión A, Mañana </li>
                 <li> Interacción con dispositivos móviles </li>
                 <li> Escuela Da Vinci 2021 </li>
             </ul>
-            <ul class="col-lg-4 my-5">
+            <ul class="col-lg-4 my-5 mx-auto">
                 <li> Secciones: </li>
                 <li> Home </li>
                 <li> Características </li>
@@ -85,7 +88,7 @@
                 <li> Video </li>
                 <li> Contactanos </li>
             </ul>
-            <ul class="col-lg-4 my-5">
+            <ul class="col-lg-4 my-5 mx-auto">
                 <li> Redes sociales: </li>
             </ul>
         </div>

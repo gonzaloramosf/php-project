@@ -4,8 +4,15 @@ nav {
     background-color: #F8F9FA;
 }
 
-.shoes-category {
-    width: 45%;
+.logo {
+    width: 32px;
+    height: 32px;
+    background: url("Images/cocodrilo.png");
+    font-size: 0;
+    position: absolute;
+    top: 10px;
+    z-index: 1;
+    cursor: pointer;
 }
 
 li {
