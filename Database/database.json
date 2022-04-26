@@ -1,50 +1,110 @@
 [
   {
     "itemId": 1,
-    "item": "Shoes Nike: Uno",
-    "resume": "Lorem ipsum dolor Zapatilla uno",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt est inventore laudantium recusandae repudiandae tenetur vitae voluptates? At excepturi fugiat, harum laboriosam, minus modi molestias porro sunt totam veritatis voluptatem.",
-    "image": "shoes.jpg",
-    "imageTitle": "Shoes name"
+    "item": "Nike Air Max 97",
+    "resume": "Calzado para hombre",
+    "price": "US$175",
+    "description": "Con el diseño icónico de ondulación inspirado en los trenes bala de Japón, el Nike Air Max 97 brinda un look para impulsar tu estilo a máxima velocidad.Con la unidad Nike Air revolucionaria de largo completo que sacudió al mundo del running, y agregando materiales nuevos, este calzado te permite pisar con una comodidad excepcional.",
+    "image": "nikeM1.png",
+    "imageTitle": "Nike Air Max 97"
   },
   {
     "itemId": 2,
-    "item": "Shoes Nike: Dos",
-    "resume": "Lorem ipsum dolor Zapatilla dos",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt est inventore laudantium recusandae repudiandae tenetur vitae voluptates? At excepturi fugiat, harum laboriosam, minus modi molestias porro sunt totam veritatis voluptatem.",
-    "image": "shoes.jpg",
-    "imageTitle": "Shoes name"
+    "item": "Nike Air Max 95",
+    "resume": "Calzado para hombre",
+    "price": "US$175",
+    "description": "El clásico está de vuelta. El Nike Air Max 95, inspirado en el cuerpo humano y la estética de la pista de los años 90, combina una increíble comodidad con un estilo que se lleva todas las miradas. Los icónicos paneles laterales cuentan con una rica mezcla de materiales Premium, al tiempo que el aire visible en el talón y la puntera amortigua cada paso.",
+    "image": "nikeM2.png",
+    "imageTitle": "Nike Air Max 95"
   },
   {
     "itemId": 3,
-    "item": "Shoes Nike: Tres",
-    "resume": "Lorem ipsum dolor Zapatilla tres",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt est inventore laudantium recusandae repudiandae tenetur vitae voluptates? At excepturi fugiat, harum laboriosam, minus modi molestias porro sunt totam veritatis voluptatem.",
-    "image": "shoes.jpg",
-    "imageTitle": "Shoes name"
+    "item": "Nike Air Max 90",
+    "resume": "Calzado para hombre",
+    "price": "US$130",
+    "description": "Nada como volar, nada más cómodo, nada como probado. El Nike Air Max 90 se mantiene fiel a sus raíces originales de running con la icónica suela tipo wafle, los revestimientos cosidos y los detalles clásicos de TPU. Los colores clásicos rinden homenaje a tu look fresco y la amortiguación Max Air agrega comodidad al trayecto.",
+    "image": "nikeM3.png",
+    "imageTitle": "Nike Air Max 90"
   },
   {
     "itemId": 4,
-    "item": "Shoes Nike: Cuatro",
-    "resume": "Lorem ipsum dolor Zapatilla cuatro",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt est inventore laudantium recusandae repudiandae tenetur vitae voluptates? At excepturi fugiat, harum laboriosam, minus modi molestias porro sunt totam veritatis voluptatem.",
-    "image": "shoes.jpg",
+    "item": "Nike Air Force 1 Pixel",
+    "resume": "Calzado para mujer",
+    "price": "US$130",
+    "description": "Conquista la duda y haz una declaración con el Nike Air Force 1 Pixel, un estilo reimaginado fuera de la cancha hecho por y para las mujeres. La elegante parte superior de cuero cuenta con líneas limpias y texturización sutil para brindar un look fresco y fácil de combinar con estilo. La suela y entresuela distorsionadas tienen detalles grandes y pixelados para brindar un toque moderno, mientras que el nuevo logotipo y el diseño de Swoosh invertido son un acto de audacia inquebrantable. No solo estás en el partido. Lo estás liderando.",
+    "image": "nikeW1.png",
     "imageTitle": "Shoes name"
   },
   {
     "itemId": 5,
-    "item": "Shoes Nike: Cinco",
-    "resume": "Lorem ipsum dolor Zapatilla cinco",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt est inventore laudantium recusandae repudiandae tenetur vitae voluptates? At excepturi fugiat, harum laboriosam, minus modi molestias porro sunt totam veritatis voluptatem.",
-    "image": "shoes.jpg",
-    "imageTitle": "Shoes name"
+    "item": "Nike Air Max SC",
+    "resume": "Calzado para mujer",
+    "price": "US$80",
+    "description": "Con sus líneas simples, un look de atletismo tradicional y, por supuesto, la amortiguación Air visible, las Nike Air Max SC son el acabado perfecto para cualquier atuendo. La rica mezcla de materiales agrega profundidad, a la vez que lo convierte en un calzado duradero y ligero para el día a día.",
+    "image": "nikeW2.png",
+    "imageTitle": "Nike Air Max SC"
   },
   {
     "itemId": 6,
-    "item": "Shoes Nike: Seis",
-    "resume": "Lorem ipsum dolor Zapatilla seis",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt est inventore laudantium recusandae repudiandae tenetur vitae voluptates? At excepturi fugiat, harum laboriosam, minus modi molestias porro sunt totam veritatis voluptatem.",
-    "image": "shoes.jpg",
-    "imageTitle": "Shoes name"
+    "item": "Nike Air Max 97",
+    "resume": "Calzado para mujer",
+    "price": "US$175",
+    "description": "La paz, el amor y la carrera son toda una actitud para estos clásicos inspirados en el tren bala. La revolucionaria unidad Air Max de largo completo te brinda comodidad desde el talón hasta la punta, mientras que la gamuza en la parte superior agrega un look premium a este calzado fantástico.",
+    "image": "nikeW3.png",
+    "imageTitle": "Nike Air Max 97"
+  },
+  {
+    "itemId": 7,
+    "item": "Stan Smith Shoes",
+    "resume": "Calzado para hombre",
+    "price": "US$95",
+    "description": "Atractivo atemporal. Estilo sin esfuerzo. Versatilidad cotidiana. Durante más de 50 años y contando, los zapatos adidas Stan Smith han seguido ocupando su lugar como ícono. Este par muestra un rediseño fresco como parte del compromiso de adidas de usar solo poliéster reciclado para 2024. Con una parte superior vegana y una suela hecha de desechos de caucho, aún tienen un estilo icónico, simplemente están hechos pensando en el planeta.\n\nEste producto está hecho con alternativas veganas a ingredientes o materiales derivados de animales. También está fabricado con Primegreen, una serie de materiales reciclados de alto rendimiento. El 50% de la parte superior es contenido reciclado. Sin poliéster virgen.",
+    "image": "adidasM1.png",
+    "imageTitle": "Stan Smith Shoes"
+  },
+  {
+    "itemId": 8,
+    "item": "Superstar Shoes",
+    "resume": "Calzado para hombre",
+    "price": "US$95",
+    "description": "Hecho originalmente para canchas de baloncesto en los años 70. Celebrado por la realeza del hip hop en los años 80. El zapato adidas Superstar es ahora un elemento básico de estilo de vida para los entusiastas de la moda urbana. La característica de punta de concha de fama mundial permanece, brindando estilo y protección. Al igual que lo hizo en las canchas de B-ball en el pasado. Ahora bien, ya sea en un festival o paseando por la calle podrás disfrutar sin miedo a que te pisen.El detalle dentado de las 3 Tiras y el logo de la caja de adidas Superstar agregan autenticidad OG a tu estilo.",
+    "image": "adidasM2.png",
+    "imageTitle": "Superstar Shoes"
+  },
+  {
+    "itemId": 9,
+    "item": "Superstar Shoes",
+    "resume": "Calzado para hombre",
+    "price": "US$100",
+    "description": "Hecho originalmente para canchas de baloncesto en los años 70. Celebrado por la realeza del hip hop en los años 80. El zapato adidas Superstar es ahora un elemento básico de estilo de vida para los entusiastas de la moda urbana. La característica de punta de concha de fama mundial permanece, brindando estilo y protección. Al igual que lo hizo en las canchas de B-ball en el pasado.\n\nAhora bien, ya sea en un festival o paseando por la calle podrás disfrutar sin miedo a que te pisen.El detalle dentado de las 3 Tiras y el logo de la caja de adidas Superstar agregan autenticidad OG a tu estilo.",
+    "image": "adidasM3.png",
+    "imageTitle": "Superstar Shoes"
+  },
+  {
+    "itemId": 10,
+    "item": "Forum Low Shoes",
+    "resume": "Calzado para mujer",
+    "price": "US$100",
+    "description": "Como una nota de amor de ti para ti. Cambiando el guión del Día de San Valentín, estos zapatos adidas Forum celebran la idea del amor propio. En caso de que olvides amarte a ti mismo primero, los cordones te recuerdan que EL AMOR PROPIO NO ES EGOÍSTA, y los mensajes ocultos en la lengüeta dicen ME AMO POR MÍ. Agregue llaveros de corazón y un detalle de amor grabado y estará listo para comenzar. Fabricado en parte con contenido reciclado generado a partir de desechos de producción, por ejemplo, desechos de corte y desechos domésticos posconsumo, para evitar el mayor impacto ambiental de producir contenido virgen.",
+    "image": "adidasW1.png",
+    "imageTitle": "Forum Low Shoes"
+  },
+  {
+    "itemId": 11,
+    "item": "Superstar Shoes",
+    "resume": "Calzado para mujer",
+    "price": "US$70",
+    "description": "Un pequeño puede ir muy lejos. Estos zapatos adidas Superstar tienen todos los detalles originales de los icónicos tenis con punta de goma, pero agregan destellos de oro metálico en todas partes. Hable acerca de un cambio de juego de atuendo: estos manejan el juego de calzado Y accesorios. Sin embargo, si quieres duplicar el oro, no te culpamos. Si algo hemos aprendido de las zapatillas adidas Superstar es a ir a por todas.",
+    "image": "adidasW2.png",
+    "imageTitle": "Superstar Shoes"
+  },
+  {
+    "itemId": 12,
+    "item": "Superstar Shoes",
+    "resume": "Calzado para mujer",
+    "price": "US$110",
+    "description": "Las zapatillas adidas Superstar primero dejaron su huella como innovadoras zapatillas de baloncesto. Pero en estos días, reinan supremamente en el mundo del estilo. Todos los elementos esenciales están aquí: las 3 rayas dentadas, la puntera, la parte superior de cuero y la lengüeta del talón. Pero agregamos un acento inesperado de estampado de tortuga para elevar tu estilo diario. ¿Porque, porque no? El estilo debe ser divertido. Disfruta mezclando y combinando estas zapatillas con todos tus favoritos de armario.",
+    "image": "adidasW3.png",
+    "imageTitle": "Superstar shoes"
   }
 ]

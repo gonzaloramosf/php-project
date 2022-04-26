@@ -6,11 +6,11 @@
         'Items' => [
             'title' => 'Items',
         ],
-        'Login' => [
-            'title' => 'Login',
+        'ItemDetail' => [
+          'title' => 'Item details'
         ],
-        'Register' => [
-            'title' => 'Register',
+        'Contact' => [
+            'title' => 'Contact',
         ],
         'NotFoundPage' => [
             'title' => 'Not found page',
@@ -54,10 +54,7 @@
                     <a href="main.php?v=Items" class="nav-link text-secondary"> Items </a>
                 </li>
                 <li class="nav-item">
-                    <a href="main.php?v=Login" class="nav-link text-secondary"> Login </a>
-                </li>
-                <li class="nav-item">
-                    <a href="main.php?v=Register" class="nav-link text-secondary"> Register </a>
+                    <a href="main.php?v=Contact" class="nav-link text-secondary"> Contact </a>
                 </li>
             </ul>
         </div>
@@ -71,32 +68,40 @@
             }
         ?>
     </main>
-    <footer class="bg-light text-secondary mt-4">
-        <div class="container row m-auto justify-content-center d-flex">
-            <ul class="col-lg-4 my-5 mx-auto">
+    <footer>
+        <div>
+            <ul>
                 <li> Datos: </li>
                 <li> Gonzalo Ramos Farinho </li>
                 <li> Comisión A, Mañana </li>
-                <li> Interacción con dispositivos móviles </li>
-                <li> Escuela Da Vinci 2021 </li>
+                <li> Programación II </li>
+                <li> Escuela Da Vinci 2022 </li>
             </ul>
-            <ul class="col-lg-4 my-5 mx-auto">
+            <ul>
                 <li> Secciones: </li>
-                <li> Home </li>
-                <li> Características </li>
-                <li> Tipos de cafe </li>
-                <li> Video </li>
-                <li> Contactanos </li>
+                <li>
+                    <a href="main.php?v=Home" class="text-secondary"> Home </a>
+                </li>
+                <li>
+                    <a href="main.php?v=Items" class="text-secondary"> Items </a>
+                </li>
+                <li>
+                    <a href="main.php?v=Contact" class="text-secondary"> Contact </a>
+                </li>
             </ul>
-            <ul class="col-lg-4 my-5 mx-auto">
+            <ul>
                 <li> Redes sociales: </li>
+                <li>
+                    <a href="https://www.linkedin.com/" class="text-secondary"> Linkedin </a>
+                </li>
+                <li>
+                    <a href="https://github.com/gonzaloramosf?tab=repositories" class="text-secondary"> GitHub </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/" class="text-secondary"> Twitter </a>
+                </li>
             </ul>
         </div>
     </footer>
-    <!-- Bootstrap js -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
-            integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
-            crossorigin="anonymous">
-    </script>
 </body>
 </html>

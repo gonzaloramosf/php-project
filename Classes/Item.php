@@ -4,6 +4,7 @@ class Item {
     protected $itemId;
     protected $item;
     protected $resume;
+    protected $price;
     protected $description;
     protected $image;
     protected $imageTitle;
@@ -19,6 +20,7 @@ class Item {
             $item->itemId      = $value['itemId'];
             $item->item        = $value['item'];
             $item->resume      = $value['resume'];
+            $item->price       = $value['price'];
             $item->description = $value['description'];
             $item->image       = $value['image'];
             $item->imageTitle  = $value['imageTitle'];
@@ -31,7 +33,7 @@ class Item {
     public function getItemById(int $id): ?Item {
         $items = (New Item())->all();
         foreach ($items as $item) {
-            if ($item->item_id == $id) {
+            if ($item->itemId == $id) {
                 return $item;
             }
         }
@@ -53,6 +55,10 @@ class Item {
         return $this->resume;
     }
 
+    public function getPrice(): ?string {
+        return $this->price;
+    }
+
     public function getDescription(): ?string {
         return $this->description;
     }
@@ -65,4 +71,3 @@ class Item {
         return $this->imageTitle;
     }
 }
-
