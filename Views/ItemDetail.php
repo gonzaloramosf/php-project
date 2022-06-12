@@ -1,5 +1,5 @@
 <?php
-    require_once __DIR__ . '/../Classes/Item.php';
+    require_once __DIR__ . '/../Bootstrap/autoload.php';
     $item = (new Item())->getItemById($_GET['id']);
 ?>
 <section class="container">
