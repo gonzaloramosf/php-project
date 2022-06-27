@@ -1,72 +1,176 @@
 <?php
 class Item {
-    protected $itemId;
+    protected $item_id;
+    protected $brand_fk;
     protected $item;
     protected $resume;
     protected $price;
     protected $description;
     protected $image;
-    protected $imageTitle;
+    protected $image_title;
+    protected $stock;
 
     public function all(): array {
-        $filename = __DIR__ . '/../Database/database.json';
-        $json = file_get_contents($filename);
-        $data = json_decode($json, true);
-        $items = [];
+        $db = (new DBConnection())->getConnection();
+        $query = "SELECT * FROM items";
 
-        foreach ($data as $value) {
-            $item = new Item();
-            $item->itemId      = $value['itemId'];
-            $item->item        = $value['item'];
-            $item->resume      = $value['resume'];
-            $item->price       = $value['price'];
-            $item->description = $value['description'];
-            $item->image       = $value['image'];
-            $item->imageTitle  = $value['imageTitle'];
+        $stmt = $db->prepare($query);
+        $stmt->execute();
 
-            $items[] = $item;
-        }
-        return $items;
+        // setFetchMode returns data as instance of Item.
+        $stmt->setFetchMode(PDO::FETCH_CLASS, self::class);
+        return $stmt->fetchAll();
     }
 
     public function getItemById(int $id): ?Item {
-        $items = (New Item())->all();
-        foreach ($items as $item) {
-            if ($item->itemId == $id) {
-                return $item;
-            }
+        $db = (new DBConnection())->getConnection();
+        // holders to prevent SQL injection.
+        $query = "SELECT * FROM items
+                  WHERE item_id = ?";
+        $stmt = $db->prepare($query);
+        $stmt->execute([$id]);
+        $stmt->setFetchMode(PDO::FETCH_CLASS, self::class);
+
+        $item = $stmt->fetch();
+        if (!$item) {
+            return null;
         }
-        return null;
+        return $item;
+    }
+
+    // create item in database
+    // if error throws PDOException
+    public function create(array $data) {
+        $db = (new DBConnection())->getConnection();
+        $query = "INSERT INTO items (user_fk, brand_fk, item, resume, price, 
+                  description, image, image_title, stock) 
+                  VALUES(:user_fk, :brand_fk, :item, :resume, :price,:description,
+                  :image, :image_title, :stock);";
+
+        $stmt = $db->prepare($query);
+        $stmt->execute([
+            'user_fk'     => $data['user_fk'],
+            'brand_fk'    => $data['brand_fk'],
+            'item'        => $data['item'],
+            'resume'      => $data['resume'],
+            'price'       => $data['price'],
+            'description' => $data['description'],
+            'image'       => $data['image'],
+            'image_title' => $data['image_title'],
+            'stock'       => $data['stock']
+        ]);
+    }
+
+    // delete item in database
+    public function deleteItem(): void {
+        $db = (new DBConnection())->getConnection();
+        $query = "DELETE FROM items
+                  WHERE item_id = ?";
+        $stmt = $db->prepare($query);
+        $stmt->execute([$this->getItemId()]);
+    }
+
+    // edit item in database
+    public function edit(array $data): void {
+        $db = (new DBConnection())->getConnection();
+        $query = "UPDATE items
+                  SET user_fk     = :user_fk,
+                      brand_fk    = :brand_fk,
+                      item        = :item, 
+                      resume      = :resume,
+                      price       = :price,
+                      description = :description,
+                      image       = :image,
+                      image_title = :image_title,
+                      stock       = :stock
+                  WHERE item_id = :item_id";
+        $db->prepare($query)->execute([
+            'item_id'     => $this->getItemId(),
+            'user_fk'     => $data['user_fk'],
+            'brand_fk'    => $data['brand_fk'],
+            'item'        => $data['item'],
+            'resume'      => $data['resume'],
+            'price'       => $data['price'],
+            'description' => $data['description'],
+            'image'       => $data['image'],
+            'image_title' => $data['image_title'],
+            'stock'       => $data['stock'],
+        ]);
     }
 
     /**
      * getters and setters
-    */
-    public function getItemId(): ?int {
-        return $this->itemId;
+     */
+
+    /**
+     * @return mixed
+     */
+    public function getItemId(): ?int
+    {
+        return $this->item_id;
     }
 
-    public function getItem(): ?string {
+    /**
+     * @return mixed
+     */
+    public function getBrandFk()
+    {
+        return $this->brand_fk;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getItem()
+    {
         return $this->item;
     }
 
-    public function getResume(): ?string {
+    /**
+     * @return mixed
+     */
+    public function getResume()
+    {
         return $this->resume;
     }
 
-    public function getPrice(): ?string {
+    /**
+     * @return mixed
+     */
+    public function getPrice()
+    {
         return $this->price;
     }
 
-    public function getDescription(): ?string {
+    /**
+     * @return mixed
+     */
+    public function getDescription()
+    {
         return $this->description;
     }
 
-    public function getImage(): ?string {
+    /**
+     * @return mixed
+     */
+    public function getImage()
+    {
         return $this->image;
     }
 
-    public function getImageTitle(): ?string {
-        return $this->imageTitle;
+    /**
+     * @return mixed
+     */
+    public function getImageTitle()
+    {
+        return $this->image_title;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getStock()
+    {
+        return $this->stock;
     }
 }

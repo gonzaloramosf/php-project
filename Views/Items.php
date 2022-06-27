@@ -9,12 +9,12 @@
     foreach ($items as $item):
     ?>
         <div class="col-sm-6 col-md-6 col-lg-4 items">
-            <a href="main.php?v=ItemDetail&id=<?= $item->getItemId();?>">
+            <a href="index.php?v=ItemDetail&id=<?= $item->getItemId();?>">
                 <h3 class="text-black-50"><?=$item->getItem();?> </h3>
             </a>
             <img class="img-fluid" src="Images/<?=$item->getImage();?>" alt="<?=$item->getImageTitle();?>"/>
-            <a href="main.php?v=ItemDetail&id=<?= $item->getItemId();?>">
-            <button class="btn btn-dark itemBtn"> Ver Detalles </button>
+            <a class="btn btn-dark itemBtn" href="index.php?v=ItemDetail&id=<?= $item->getItemId();?>">
+            Ver Detalles
             </a>
         </div>
     <?php

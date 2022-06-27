@@ -4,7 +4,7 @@
         <p> Error página no encontrada, regrese a inicio haciendo click en el siguiente boton: </p>
         <a href="main.php">
         <button class="mt-4 btn btn-primary">
-            Volver a inicio
+            Volver al Dashboard
         </button>
         </a>
     </div>
